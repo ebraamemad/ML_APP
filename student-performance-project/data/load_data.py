@@ -5,7 +5,7 @@ from pathlib import Path
 def load_raw_data():
     """تحميل البيانات الخام من ملف CSV"""
     # تحديد مسار الملف
-    data_path = Path("data/raw/Student_Performance.csv")  # تأكد من اسم الملف الفعلي
+    data_path = Path('E:\\projects\\student-mat.csv')  # تأكد من اسم الملف الفعلي
     
     # قراءة البيانات
     df = pd.read_csv(data_path)
