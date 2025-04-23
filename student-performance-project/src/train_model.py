@@ -9,7 +9,7 @@ from pathlib import Path
 df=pd.read_csv("E:\projects\ML_APP\student-performance-project\data\processed\initial_load.csv")
 # Prepare data for modeling
 # Exclude G1 and G2 as mentioned in the dataset description
-X = df.drop(['G1', 'G2', 'G3'], axis=1)
+X = df.drop([ 'G3', 'Mother_job', 'Father_job', 'reason_to_chose_school', 'guardian', 'traveltime', 'weekly_studytime', 'failures', 'extra_edu_supp', 'famsize', 'extra_paid_class', 'extra_curr_activities', 'nursery', 'Interested_in_higher_edu', 'internet_access', 'romantic_relationship', 'Family_quality_reln', 'freetime_after_school', 'goout_with_friends', 'workday_alcohol_consum', 'weekend_alcohol_consum', 'health_status', 'absences', 'G1', 'G2'], axis=1)
 y = df['G3']
 
 # Encode categorical variables
