@@ -28,3 +28,4 @@ if __name__ == "__main__":
     
     # حفظ نسخة أولية في المجلد processed (اختياري)
     student_data.to_csv("data/processed/initial_load.csv", index=False)
+    
